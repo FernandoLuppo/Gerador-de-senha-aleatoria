@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Gerador de senha, gerador password">
+    <link rel="icon" href="./image/padlock.png">
+    <title>Gerador de senha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   
+    
+<header>
+    <img src="./image/padlock-header.png" alt="Padlock">
+    <h1>Senhas LuppoTw</h1>
+</header>
+
+
+<section>
+<div id="countainer">
+
+    <h1>Gerador de senhas aleatórias</h1>
+
+    <div id="visible-itens">
+        
+        <span>Tamanho <span id="slider-value"></span> caracteres</span>
+        <input id="slider" type="range" min="5" max="25" name="slaider" value="15">
+        <button id="button" onclick="passwordButton()">Gerar senha</button>
+
+    </div>
+
+    <div id="hide-itens" class="hide-itens2">
+
+        <span>A senha gerada foi:</span>
+        <p id="password" onclick="copy()"></p>
+        <span id="last-span">clique na senha para copia-la</span>
+        
+    </div>
+
+</div>
+</section>
+
+
+<footer>
+    <span>&copy;LuppoTW</span>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
